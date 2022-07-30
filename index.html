@@ -14,7 +14,7 @@
             <form name="mycalculator" action='' method='GET'>
                 <fieldset>
                     <legend>My calculator</legend>
-                    <textarea name="output" rows="3" cols="20"></textarea>
+                    <textarea name="output" rows="3" cols="20" readonly></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Input</legend>
@@ -23,9 +23,9 @@
                     <input type="text" name="input_b" id="input_b" size="3" maxlength="3">
                     <br>
                     Operator: &nbsp;
-                    <input type="button" name="add" value="+" onclick="addValue()">
-                    <input type="button" name="mul" value="&times;" onclick="mulValue()">
-                    <input type="button" name="div" value=":" onclick="divValue()">
+                    <input type="button" name="add" value="+" onclick="doOperation(this)">
+                    <input type="button" name="mul" value="&times;" onclick="doOperation(this)">
+                    <input type="button" name="div" value=":" onclick="doOperation(this)">
                     <input type="reset" value="clear" onclick="clearAll()">
                 </fieldset>
             </form>
